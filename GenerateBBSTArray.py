@@ -1,5 +1,5 @@
 def GenerateBBSTArray(a):
-    balans_massiv = [None] * 3
+    array_BST = [None] * 3
     a = sorted(a)
     ind = 1
 
@@ -17,5 +17,5 @@ def GenerateBBSTArray(a):
         binary_sort(a[centr+1:], s_m, x * 2 + 2)
         return s_m
 
-    balans_massiv = binary_sort(a, balans_massiv, 0)
-    return balans_massiv
+    array_BST = binary_sort(a, array_BST, 0)
+    return array_BST
